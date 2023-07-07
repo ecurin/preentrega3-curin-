@@ -1,0 +1,483 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    color: #4c7a34;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+header {
+    height: 175px;
+    width: 100%;
+    background-color: #629c44;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+}
+
+#banner {
+    background: linear-gradient(to right  ,#333, #629c44 , #629c44 , #629c44 );
+    height: 134px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nombresite {
+    padding-top: 30px;
+    padding-left: 30px;
+    font-family: verdana;
+    font-size: 30pt;
+}
+
+
+
+#Contenido inicial main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    grid-column-start: 2;
+
+}
+
+.contenedor3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    margin-bottom:15px;
+
+}
+
+#titulo {
+    background-color: white;
+    color: #4c7a34;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    padding: 10px;
+}
+
+.boxini {
+
+    background-color: white;
+    border-color: green;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 250px;
+    font-size: 10pt;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#vdExperiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 18pt;
+
+}h2 {
+    font-weight: bold;
+    font-size: 14pt;
+
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 12pt;
+
+}
+
+#entrada {
+    text-align: center;
+    color: #4c7a34;
+    font-size: 11pt;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: #629c44;
+    font-family: arial;
+    padding-top: 20px;
+    grid-area: footer;
+
+}
+
+
+.footerColumns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footerColumns div {
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.footerColumns div h4 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.footerColumns div a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+/* PRODUCTOS*/
+
+
+.tbproductos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.trproductos {
+    /*width: 700px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.trproductos div {
+    width: 20%;
+    min-width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 25px;
+    text-align: center
+}
+
+.trDesc {
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 35px;
+}
+
+.imgalery {
+
+    width: 120px;
+    height: 120px;
+}
+
+
+/*  PRODUCTO SOLITARIO*/
+#producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgProd {
+
+    width: 350px;
+    height: 350px;
+
+}
+
+#agregar {
+    padding: 10px;
+    float:right;
+
+}
+
+/** CARRO */
+
+.tbCarro {
+    display: flex;
+    font-size: 12px;
+}
+
+.tbProdsCarro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.trCarro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.tbDespacho {
+    margin-right: 200px;
+}
+
+
+#dvContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dvContactoTr{
+    display: flex;
+    padding: 10px;
+    
+}
+.dvContactoTrTd1{
+    width:120px;
+
+}
+.dvContactoTrTd2{
+
+}
+
+
+#mapa{
+    display: flex;
+    flex-direction:column;
+    align-items: center;        
+}
+#frMapa{
+    width: 100%;
+    height: 100%;
+}
+
+.botonGenerico{
+    background-color: darkolivegreen;
+    color: white;
+    border-radius: 5px;
+
+}
+.descProducto{
+    font-size: 12px;
+}
+
+/** Inicio Barra Navegación*/
+
+.topnav {
+    z-index: 1;
+    overflow: hidden;
+    background-color: #333;
+    
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+    float: right;
+}
+
+/** fin barra navegación */
+
+
+
+
+@media (max-width:840px) {
+
+    body {
+        grid-template-columns: 150px auto;
+        grid-template-areas:
+            "header main "
+            "footer footer ";
+    }
+
+    header {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #banner {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        background:#629c44;
+    }
+
+    #fotosbanner {
+        visibility: hidden;
+    }
+
+    #nombresite {
+        font-size: 20px;
+        padding-left:0px;
+    }
+
+    #titulo {
+        background-color: #333;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20pt;
+        text-align: center;
+        padding: 10px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .contenedor3 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .boxini {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 80%;
+    }
+
+    .trproductos {
+        /*width: 700px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .trproductos div {
+        width: 20%;
+        min-width: 250px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 25px;
+        ;
+    }
+    
+    .tbCarro {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+/* fin media 840 */
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header "
+            "main"
+            "footer ";
+    }
+
+    #banner {
+        background-color: #629c44;
+        height: 80px;
+        margin-top: 41px;
+    }
+
+    #titulo {
+        background-color: white;
+        color: #4c7a34;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20pt;
+        text-align: center;
+        padding: 10px;
+    }
+
+
+    .topnav {
+        position: fixed;
+        width: 100%;
+        
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: fixed;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+
+    .footerColumns {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+
+
+    .footerColumns div img {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    footer #copyright {
+        padding: 10px;
+    }
+
+
+
+}

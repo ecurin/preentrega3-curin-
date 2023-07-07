@@ -1,0 +1,26 @@
+#dvContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dvContactoTr{
+    display: flex;
+    padding: 10px;
+    
+}
+.dvContactoTrTd1{
+    width:120px;
+
+}
+
+
+#mapa{
+    display: flex;
+    flex-direction:column;
+    align-items: center;        
+}
+#frMapa{
+    width: 100%;
+    height: 100%;
+}

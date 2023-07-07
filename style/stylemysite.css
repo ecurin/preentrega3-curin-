@@ -1,0 +1,41 @@
+
+/** CARRO */
+.tbCarro {
+    display: flex;
+    font-size: 12px;
+}
+.tbProdsCarro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.trCarro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.tbDespacho {
+    margin-right: 200px;
+}
+
+
+
+
+
+@media (max-width:840px) {
+ 
+
+    
+    .tbCarro {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+/* fin media 840 */
+

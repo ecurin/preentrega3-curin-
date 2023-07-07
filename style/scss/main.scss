@@ -1,0 +1,102 @@
+@import "base/reset"  ;
+
+@import "components/buttons";
+
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/home";
+@import "pages/products";
+@import "pages/experience";
+@import "pages/contact";
+
+@import "layout/footer";
+
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    color: #4c7a34;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+
+h1 {
+    font-weight: bold;
+    font-size: 18pt;
+
+}h2 {
+    font-weight: bold;
+    font-size: 14pt;
+
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 12pt;
+
+}
+
+#titulo {
+    background-color: white;
+    color: #4c7a34;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    padding: 10px;
+}
+
+#entrada {
+    text-align: center;
+    color: #4c7a34;
+    font-size: 11pt;
+
+    padding: 10px;
+}
+
+
+@media (max-width:840px) {
+
+    body {
+        grid-template-columns: 150px auto;
+        grid-template-areas:
+            "header main "
+            "footer footer ";
+    }
+
+    #titulo {
+        background-color: #333;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20pt;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header "
+            "main"
+            "footer ";
+    }
+
+    #titulo {
+        background-color: white;
+        color: #4c7a34;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20pt;
+        text-align: center;
+        padding: 10px;
+    }
+}

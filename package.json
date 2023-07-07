@@ -1,0 +1,16 @@
+{
+  "name": "terceraentrega",
+  "version": "1.0.0",
+  "description": "En la pagina productos.html se debe pinchar el Escritorio 1 para ver su detalle.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "sass --watch ./style/scss/main.scss ./style/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "sass": "^1.63.6"
+  }
+}

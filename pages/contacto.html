@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LittleDesk | Contáctanos, estamos para ayudarte</title>
+
+    <meta name="description" content="Creamos escritorios u otras soluciones para todos tus espacios por más pequeños que sean.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel='stylesheet' type='text/css' media='screen' href='../style/main.css'>
+</head>
+
+<body>
+
+    <header>
+        <nav class="topnav" id="navBar">
+            <a href="#">&nbsp;</a>
+            <a href="../index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="experiencias.html">Experiencias</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="fa fa-bars"></div>
+            </a>
+        </nav>
+
+        <div id="banner">
+            <p id="nombresite">LittleDesk</p>
+            <div id="fotosbanner">
+                <img class="fotobanner" src="../imgs/ban01.png" /><img class="fotobanner" src="../imgs/ban02.png" /><img
+                    class="fotobanner" src="../imgs/ban03.png" />
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="titulo">
+            <div>
+                <h1 class="animate__animated animate__fadeIn">Contáctanos</h1>
+            </div>
+        </section>
+
+        <section id="entrada">
+            <p id="parrafo" class="animate__animated animate__fadeIn">Tienes dudas o quieres crear tu propio espacio?
+                <br>
+                Dejanos tus datos y te contactaremos a la brevedad.
+            </p>
+        </section>
+
+
+
+        <form action="#" method="post">
+            <div id="dvContacto">
+                <div class="dvContactoTr">
+                    <div class="dvContactoTrTd1"><label for="nombre">Nombre</label> </div>
+                    <div class="dvContactoTrTd2"><input id="nombre" name="nombre" value="" /></div>
+                </div>
+                <div class="dvContactoTr">
+                    <div class="dvContactoTrTd1"><label for="fono">Telefono</label> </div>
+                    <div class="dvContactoTrTd2"><input id="fono" name="fono" value="" /></div>
+                </div>
+                <div class="dvContactoTr">
+                    <div class="dvContactoTrTd1"><label for="correo">Correo</label> </div>
+                    <div class="dvContactoTrTd2"><input id="correo" name="correo" value="" />
+                    </div>
+                </div>
+                <div class="dvContactoTr">
+                    <div class="dvContactoTrTd1"><label for="mensaje">Mensaje</label> </div>
+                    <div class="dvContactoTrTd2"><textarea id="mensaje" name="mensaje"></textarea></div>
+                </div>
+
+                <div class="dvContactoTr">
+                    <div class="dvContactoTrTd2"><input type="submit" value="Contactar" class="botonGenerico" /></div>
+                </div>
+            </div>
+        </form>
+
+        <div id="mapa">
+            <p>
+                También nos puedes encontrar en nuestro taller...
+            </p>
+            <iframe id="frMapa"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13314.18538210963!2d-70.86703241954346!3d-33.4611238379469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1684273528769!5m2!1ses-419!2scl"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footerColumns">
+            <div>
+                <h2>Información de contacto</h2>
+                <p>Dirección: Avenida del Canal 21500</p>
+                <p>Teléfono: 569-555-4433</p>
+                <p>Email: infolittledesk@gmail.com</p>
+            </div>
+
+            <div class="footerEnlaces">
+                <h2>Enlaces</h2>
+                <p><a href="../index.html">Inicio</a></p>
+                <p><a href="productos.html">Productos</a></p>
+                <p><a href="experiencias.html">Experiencias</a></p>
+                <p><a href="contacto.html">Contacto</a></p>
+                </p>
+            </div>
+
+            <div class="footerRedes">
+                <h2>Síguenos</h2>
+                <p><a href="#"><img width="50" src="../imgs/facebook.svg" alt="Facebook"></a></p>
+                <p><a href="#"><img width="50" src="../imgs/twitter.svg" alt="Twitter"></a></p>
+                <p><a href="#"><img width="50" src="../imgs/instagram.svg" alt="Instagram"></a></p>
+            </div>
+
+            <div>
+                <h2>Suscripción</h2>
+                <form>
+                    <div>
+                        <input type="email" id="email" placeholder="Ingresa tu email" autocomplete="off">
+                    </div>
+                    <button type="submit">Suscribir</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div id="copyright">
+            <span>LittleDesk 2023 / Derechos reservados</span>
+        </div>
+
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navBar");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
