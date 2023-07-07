@@ -6,6 +6,7 @@
 # En la pagina productos.html se debe pinchar el Escritorio 1 para ver su detalle.
 #
 # en Animaciones
+#    - Se utiliza estilo grandient al header
 #    - Se le dá fadein a los titulos
 #    - en productos se les dá fade-rigth a los distintos productos
 #      (se aprecia más en modo movil)
